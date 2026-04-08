@@ -1,4 +1,3 @@
-
 ## lsblk
 
 ```shell

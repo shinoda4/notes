@@ -1,4 +1,3 @@
-
 ```shell
 git commit
 git checkout

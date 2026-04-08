@@ -1,4 +1,3 @@
-
 ## Generate keys
 
 ```shell
@@ -17,7 +16,7 @@ Host pi
   IdentityFile ~/.ssh/id_ed25519
 ```
 
-## 反向SSH隧道流量
+## 反向 SSH 隧道流量
 
 在本机开启代理后，开启局域网代理，比如端口 `7890`，`ssh` 连接到 `remote_server`
 
@@ -31,6 +30,7 @@ ssh -R 8888:127.0.0.1:7890 user@remote_server
 export http_proxy=127.0.0.1:8888
 export https_proxy=127.0.0.1:8888
 ```
+
 ## 本地端口转发 (Local Port Forwarding)
 
 将远端的 `9090` 端口转发到本地的 `8080`
@@ -39,4 +39,3 @@ export https_proxy=127.0.0.1:8888
 # ssh -L [本地地址:]本地端口:目标地址:目标端口 用户名@跳板机地址
 ssh -L 8080:localhost:9090 remote_server
 ```
-
